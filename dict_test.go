@@ -2,7 +2,7 @@ package dict
 
 import "testing"
 
-func TestPopulate(t *testing.T) {
+func TestPopulateByUNIXCommand(t *testing.T) {
 	dictionary := Dictionary{}
 	dictionary.PopulateByUNIXCommand()
 	if !dictionary.InDictionary("waterman") {
